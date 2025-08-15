@@ -13,9 +13,16 @@ code {
     monospace;
 }
 
+p {
+  width: 30px;
+}
+
 
 /* ------------------HEADER------------------- */
 header{
+  top: 0;
+  position: sticky;
+  background-color: white;
   display: flex;
   height: 100px;
   place-items: center;
@@ -39,8 +46,8 @@ header a:hover{
   color: #4824ff;
   filter: drop-shadow(0px 0px 50px #4824ff)
 }
-
 .btn{
+  position: relative;
   height: 55px;
   width: 222px;
   border-radius: 55px;
@@ -49,7 +56,7 @@ header a:hover{
   color: white;
   font-weight: 500;
   font-size: 18px;
-  transition: 0.5 ease-in-out;
+  transition: 0.5s ease-in-out;
   overflow: hidden;
   margin-right: 2%;
   cursor: pointer;
@@ -57,23 +64,26 @@ header a:hover{
 }
 
 .btn:hover{
-  filter: drop-shadow(0px 0px 3px #4824ff40)
+  filter: drop-shadow(0px 0px 3px #4824ff40);
 }
 
 .btn:before{
   content: '';
   position: absolute;
-  height: 300px;
+  top: -200px; /* стартовое смещение по вертикали */
+  left: -50px; /* стартовое смещение по горизонтали */
+  height: 400px;
   width: 30px;
   background: #ffffffbd;
-  /*filter: blur(2px);*/
-  transition: 1.5s;
-  transform: rotate(-20deg) translateX(-50px) translateY(-200px);
+  filter: blur(2px);
+  transition: transform 1.5s ease;
+  transform: rotate(-20deg) ;
 }
 
 .btn:hover:before{
-  transform: rotate(-20deg) translateX(200px);
+  transform: rotate(-20deg) translateX(250px); /* анимация движения блика */
 }
+
 
 .icon {
   height: 55px;
@@ -116,4 +126,11 @@ header a:hover{
 
 .switch:hover > .theme.light{
   transform: rotate(45deg);
+}
+
+/*--------------------------------Content----------------------------*/
+
+.content{
+  margin-top: 100px;
+  background-color: red;
 }

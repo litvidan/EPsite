@@ -39,6 +39,17 @@ function App() {
         </div>
 
       </header>
+
+      <div className="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, porro neque! Perferendis provident culpa, beatae omnis aliquam maiores voluptas doloribus deserunt aliquid dignissimos aspernatur non, nemo sequi accusamus vitae cumque!
+        </p>       
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, porro neque! Perferendis provident culpa, beatae omnis aliquam maiores voluptas doloribus deserunt aliquid dignissimos aspernatur non, nemo sequi accusamus vitae cumque!
+        </p>       
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, porro neque! Perferendis provident culpa, beatae omnis aliquam maiores voluptas doloribus deserunt aliquid dignissimos aspernatur non, nemo sequi accusamus vitae cumque!
+        </p>       
+      </div>
     </div>
   );
 }
