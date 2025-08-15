@@ -1,22 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import ModalWindow from './ModalWindow.js';
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  }
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  }
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div className="menu">
+          <a>Обо мне</a>
+          <a>Портфолио</a>
+        </div>
+
+        <button onClick={handleOpenModal} className="btn">Связаться</button>
+        <ModalWindow show={showModal} onClose={handleCloseModal}>
+          <h2 style={{color:"#4824ff", fontSize:"40px"}}> Контакты</h2>
+          <p style={{fontSize: "22px"}}>Вы можете написать мне на почту</p>
+        </ModalWindow>
+
+
+        <a href="https://t.me/litvidan" target="_blank"
+        className="icon telegram"/>
+        <a href="https://vk.com/litvidan" target="_blank"
+        className="icon vk"/>
+
+        <div className="switch">
+          <div className="theme light"></div>
+        </div>
+
       </header>
     </div>
   );
