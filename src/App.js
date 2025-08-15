@@ -18,8 +18,9 @@ function App() {
     <div className="App">
       <header>
         <div className="menu">
-          <a>Обо мне</a>
+          <a>Главная</a>
           <a>Портфолио</a>
+          <a>Материалы</a>
         </div>
 
         <button onClick={handleOpenModal} className="btn">Связаться</button>
@@ -41,15 +42,22 @@ function App() {
       </header>
 
       <div className="content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, porro neque! Perferendis provident culpa, beatae omnis aliquam maiores voluptas doloribus deserunt aliquid dignissimos aspernatur non, nemo sequi accusamus vitae cumque!
-        </p>       
+        <div className="main_description">
+          <img src="images\photo.jpg" alt="Фото"></img> 
+          <div>
+          
+            <p><h1>Меня зовут Елена Поломошнова</h1>Стать учителем математики я мечтала со школьной скамьи. Окончила Бурятский Государственный университет им. Д.Банзарова. Работаю учителем математики в МБОУ "Нижнесаянтуйская СОШ". Самое прекрасное в моей работе - это дети. Я получаю огромное удовольствие от общения с ними.
+Мой девиз учителя математики: " Учить пониманию, а не запоминанию".</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, porro neque! Perferendis provident culpa, beatae omnis aliquam maiores voluptas doloribus deserunt aliquid dignissimos aspernatur non, nemo sequi accusamus vitae cumque!
-        </p>       
+          </div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, porro neque! Perferendis provident culpa, beatae omnis aliquam maiores voluptas doloribus deserunt aliquid dignissimos aspernatur non, nemo sequi accusamus vitae cumque!
-        </p>       
+        </div>
+        
       </div>
+
+      <footer>
+        <div>That's gonna be a footer</div>
+      </footer>
     </div>
   );
 }

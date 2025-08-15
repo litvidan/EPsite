@@ -29,6 +29,7 @@
     transform: translateY(-50px);
     transition: transform 0.5s ease;
     z-index: 1001;
+    overflow: hidden;
 }
 
 .modal-backdrop.show .modal-content{
